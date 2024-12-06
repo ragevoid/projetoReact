@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Header() {
+function Header(){
   return (
     <div className="container-fluid bg-danger">
       <div className="container d-flex justify-content-end">
@@ -10,7 +10,7 @@ function Header() {
       </div>
     </div>
   );
-}
+};
 
 export default Header;
 

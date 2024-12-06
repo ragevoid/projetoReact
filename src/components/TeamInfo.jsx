@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
-function TeamInfo() {
+const TeamInfo = () => {
   return (
     <Container className="d-flex justify-content-center flex-column align-items-center gap-3">
       <div className="d-flex justify-content-center align-items-center gap-3">

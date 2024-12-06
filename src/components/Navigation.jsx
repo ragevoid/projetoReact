@@ -1,11 +1,11 @@
 import React from 'react';
-import { Navbar, Nav as BootstrapNav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
-function Navigation() {
+const Navigation = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" className="border-top border-3">
       <Container className="position-relative" style={{ zIndex: 2 }}>
-        <Navbar.Brand href="/" className="d-flex align-items-center">
+        <Navbar.Brand href='' className="d-flex align-items-center">
           <img
             src="src\assets\img\logoFlamengo.png"
             alt="Logo Flamengo"
@@ -19,27 +19,18 @@ function Navigation() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <BootstrapNav>
-            <BootstrapNav.Link href="https://www.facebook.com/FlamengoOficial" target="_blank">
-              Facebook
-            </BootstrapNav.Link>
-            <BootstrapNav.Link href="https://twitter.com/flamengo" target="_blank">
-              Twitter (X)
-            </BootstrapNav.Link>
-            <BootstrapNav.Link href="https://instagram.com/flamengo" target="_blank">
-              Instagram
-            </BootstrapNav.Link>
-            <BootstrapNav.Link href="https://www.youtube.com/user/flamengo" target="_blank">
-              YouTube
-            </BootstrapNav.Link>
-            <BootstrapNav.Link href="https://www.tiktok.com/@flamengo" target="_blank">
-              TikTok
-            </BootstrapNav.Link>
-          </BootstrapNav>
+          <Nav>
+            <Nav.Link href="https://www.facebook.com/FlamengoOficial" target="_blank">Facebook</Nav.Link>
+            <Nav.Link href="https://twitter.com/flamengo" target="_blank">Twitter (X)</Nav.Link>
+            <Nav.Link href="https://instagram.com/flamengo" target="_blank">Instagram</Nav.Link>
+            <Nav.Link href="https://www.youtube.com/user/flamengo" target="_blank">YouTube</Nav.Link>
+            <Nav.Link href="https://www.tiktok.com/@flamengo" target="_blank">TikTok</Nav.Link>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-}
+};
 
 export default Navigation;
+

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-dark text-light py-3 mt-auto">
       <Container className="text-center">
-        <a href="#" className="text-light" id="ancoraFooter">Teste de Bootstrap &copy;</a>
+        <a href="#" className="text-light" id="ancoraFooter">Teste de React &copy;</a>
       </Container>
     </footer>
   );

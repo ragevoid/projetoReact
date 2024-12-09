@@ -33,3 +33,17 @@ export const fetchFixtures = async () => {
   }
 };
 
+export const fetchLastFixture = async () => {
+  try {
+    const response = await axios.get(`${API_HOST}/fixtures?team=127&last=1`, {
+      headers: {
+        'x-rapidapi-host': 'v3.football.api-sports.io',
+        'x-rapidapi-key': API_KEY
+      }
+    });
+    return response.data.response[0] || null;
+  } catch (error) {
+    console.error('Erro ao buscar partida:', error);
+    return null;
+  }
+};

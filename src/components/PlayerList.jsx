@@ -5,19 +5,19 @@ const PlayerList = ({ players, setPlayers }) => {
   const [showModal, setShowModal] = useState(false);
   const [currentPlayer, setCurrentPlayer] = useState(null);
 
-  // Função para fechar o modal
+  // FECHAR MODAL
   const handleClose = () => {
     setShowModal(false);
     setCurrentPlayer(null);
   };
 
-  // Função para abrir o modal
+  // ABRIR MODAL
   const handleShow = (player) => {
     setCurrentPlayer(player || null);
     setShowModal(true);
   };
 
-  // Função para lidar com o envio do formulário
+  // ENVIO DE FORMULARIO
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -38,7 +38,7 @@ const PlayerList = ({ players, setPlayers }) => {
     handleClose();
   };
 
-  // Função para deletar um jogador
+  // DELETAR JOGADOR
   const handleDelete = (id) => {
     setPlayers(players.filter(p => p.id !== id));
   };

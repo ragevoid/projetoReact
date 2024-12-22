@@ -1,1 +1,3 @@
-# projetoReact
+# projetoReactDockerizado
+
+docker-compose up --build
